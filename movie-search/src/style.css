@@ -1,0 +1,158 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+min-height:100vh;
+padding:40px;
+}
+
+/* центрирование */
+
+.center{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* заголовок */
+
+h1{
+margin-bottom:25px;
+font-size:38px;
+letter-spacing:1px;
+}
+
+/* поле поиска */
+
+input{
+padding:12px 15px;
+width:260px;
+border:none;
+border-radius:8px;
+outline:none;
+font-size:16px;
+margin-bottom:15px;
+background:rgba(255,255,255,0.9);
+}
+
+/* кнопки */
+
+button{
+padding:10px 22px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+background:linear-gradient(135deg,#ffcc00,#ff9800);
+transition:0.25s;
+margin:5px;
+}
+
+button:hover{
+transform:scale(1.07);
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* кнопка favorites */
+
+.favBtn{
+background:linear-gradient(135deg,#ff4b2b,#ff416c);
+color:white;
+}
+
+/* кнопка назад */
+
+.backBtn{
+background:#444;
+color:white;
+margin-bottom:20px;
+}
+
+/* карточка фильма */
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+max-width:360px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* постер */
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:12px;
+transition:0.4s;
+}
+
+.card img:hover{
+transform:scale(1.05);
+}
+
+/* текст */
+
+.card h2{
+margin-bottom:10px;
+}
+
+.card p{
+margin:6px 0;
+opacity:0.9;
+}
+
+.plot{
+font-size:14px;
+line-height:1.5;
+margin-top:10px;
+}
+.removeBtn{
+background:#ff4d4d;
+color:white;
+margin-top:10px;
+}
+
+/* кнопки внутри карточки */
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:15px;
+}
+
+/* grid любимых фильмов */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+gap:25px;
+width:100%;
+max-width:900px;
+margin-top:30px;
+}
+
+/* карточки в favorites */
+
+.grid .card{
+max-width:200px;
+text-align:center;
+}
+
+.grid img{
+height:300px;
+object-fit:cover;
+}
