@@ -209,4 +209,8 @@ MIT — свободное использование, модификация и
 ---
 
 **Приятного использования! 🍿**
-```
+
+## 👨‍💻 Автор
+
+**BallaZ-ooops**
+GitHub: [@BallaZ-oops](https://github.com/BallaZ-oops)
